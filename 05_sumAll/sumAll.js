@@ -18,15 +18,9 @@ const sumAll = function(a, b) {
         return "ERROR"
     }
 
-    console.log()
-
     // Declares the first, second number and result variables. 
     const lowVal = Math.min(a, b);
     const highVal = Math.max(a, b);
-
-    // Reference
-    console.log(highVal);
-    console.log(lowVal);
 
     // Create a for loop that iterates till reach "highVal" number
     function numbersBetween(start, end) {
@@ -34,9 +28,6 @@ const sumAll = function(a, b) {
             (_, index) => start + index);
     }
     const result = numbersBetween(lowVal, highVal);
-
-    // Reference
-    console.log(result);
 
     // Create a for loop that iterates till reach "highVal" number
     for (let i = 0; i < result.length; i++) {
